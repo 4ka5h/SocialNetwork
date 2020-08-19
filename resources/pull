@@ -1,0 +1,13 @@
+cd $HOME/SN/
+n=$(ls -d */ |wc -l)
+echo $n
+if [ $n -gt 1];
+then
+	echo "Fetch for which of following: \n$(ls -d */ | cut -f1 -d'/')"
+	read NETWORK
+else	
+	$(ls -d */ |wc -l)
+fi
+cd $HOME/SN/$NETWORK
+git fetch
+git merge origin/master

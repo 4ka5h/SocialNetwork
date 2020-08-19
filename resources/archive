@@ -1,0 +1,16 @@
+#!/bin/sh
+DIR="$HOME/SN/Archive"
+if not [ -d "$DIR" ]; then
+  	mkdir $DIR
+  	cd $DIR
+  	touch archivedb
+  	echo "Creating new network in ${DIR}..."
+fi
+#Create the network specific folder in the SN folder
+echo "Social Network Name: "
+read NETWORK
+cd $HOME/SN/$NETWORK
+echo "Enter the 7 word Post ID : "
+read POSTID
+git show $POSTID >> archivedb
+echo "Archive Successful."

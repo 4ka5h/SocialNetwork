@@ -1,0 +1,3 @@
+echo "Username to follow ? "
+read USERNAME
+echo $USERNAME >> followlist    

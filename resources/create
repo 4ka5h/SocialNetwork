@@ -1,0 +1,33 @@
+#!/bin/sh
+
+#Default directory to handle all networks is DIR.
+DIR="$HOME/SN"
+
+#Check if SN directory is intialized
+if [ -d "$DIR" ]; then
+  	echo "Creating new network in ${DIR}..."
+else
+  	mkdir $DIR
+  	echo "Creating new network in ${DIR}..."
+fi
+
+#Create the network specific folder in the SN folder
+cd $HOME/SN/
+echo "What name would you like to give to your social network ? " 
+read NEWNETWORK #The name of the network you want to create.
+if [ -d "$NEWNETWORK" ]; then
+ 	echo "Network already exists.  Want to join it? (Yes/No) "
+  	read JOINRESPONSE
+  	echo "You have responded $JOINRESPONSE"
+  	sn join
+else
+  	###  Control will jump here if $DIR does NOT exists ###
+	mkdir $NEWNETWORK 
+	cd $NEWNETWORK	
+	git init --shared=group #Initialize git 
+  touch database_$NEWNETWORK #Create a database file
+  git add database_$NEWNETWORK #Add that file for tracking
+  echo "Creating new network in ${DIR}..."
+fi
+
+

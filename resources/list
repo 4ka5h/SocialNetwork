@@ -1,0 +1,5 @@
+#!/bin/sh
+# Lists the networks you are part of.
+DIR="$HOME/SN"
+cd $DIR
+echo "You are a part of $(ls|wc -l) networks:\n$(ls)"

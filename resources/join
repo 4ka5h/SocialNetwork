@@ -1,0 +1,11 @@
+#!/bin/sh
+sudo adduser --disabled-password git
+sudo su git
+mkdir ~/.ssh && chmod 700 ~/.ssh
+touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
+sudo chsh git -s $(which git-shell)
+cd /home/git
+sudo mkdir SocialNetwork.git
+cd SocialNetwork.git && sudo git init --bare && cd ..
+sudo chown -R git.git SocialNetwork.git/
+git shortlog -s | awk '{print $2}' >> userlist

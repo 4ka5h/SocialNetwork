@@ -1,0 +1,38 @@
+This help document explains the intentions for the commands and their usage. Although due to some other commitments, this project could not be completed upto the mark, Yet I have tried to give an effort.
+The details of the options in "sn [options]" as follows - 
+
+create - Lets you create a new network by asking the name for it. Initializes a git repo in the folder of chosen name and creates a database file for the network. Basic idea is to edit this database file for the exchange of messages.
+
+join - Clones a repo from a IP address and a path entered in the prompt.
+
+pull - Pulls the new changes in the git repo from the master server by running git pull.
+
+log - Shows the git log of the selected network.
+
+show - Shows the git show output for the selected network 
+
+push - Pushes the changes made by you in the database file to the master server.
+
+follow - Stores the list of the people you are interested in for the priority.
+
+members - lists all the members in the network.
+
+unfollow - Removes the person from the list of follow.
+
+list - Tells you how many networks you are part of.
+	        
+--help - Opens this help document.
+
+--sn-path - Shows path to the stored files of the network
+
+leave - Deletes the network directory 
+
+archive - Stores the post separetly from the SHA1's 7 letters.
+	      
+Although I have tried to incorporate more features, the testing of many features in the real local network could not happen. There is a chance that few commands do not perform properly.
+
+The networks created or joined are stored under the "SN" directory of the home folder of the user. I tried to create another password-disabled user namely "gituser" for this purpose but since most of the files and projects lie in the user's home, it was not a successful attempt. Also due to this pulling from the local network incorporated SSH logins.
+
+All the commands are stored and run from "bin" directory in home folder.
+
+Installsn file contains some changes in the settings which I had to make during this setup.

@@ -1,0 +1,10 @@
+#!/bin/sh
+cp sn.gz $HOME/bin/ 
+tar -xvf ./sn.tar.gz -C $HOME/bin	 
+rm sn.gz
+cd $HOME/bin 
+chomod +x *
+sudo apt-get update
+sudo apt install git -y
+#sudo adduser --disabled-password git
+#sudo su git

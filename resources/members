@@ -1,0 +1,7 @@
+#!/bin/sh
+DIR="$HOME/SN"
+cd $DIR
+echo "Choose one of $(ls|wc -l) networks:\n$(ls)"
+read NETWORK
+cd DIR/$NETWORK
+git shortlog -s | awk '{print $2}'

@@ -1,0 +1,9 @@
+#!/bin/sh
+DIR="$HOME/SN"
+cd $DIR
+sudo apt-get update
+sudo apt-get install openssh-server -y
+sudo ufw allow 22
+sudo echo $(which git-shell) >> /etc/shells
+cd $HOME/bin/snResource
+sudo chmod 700 *

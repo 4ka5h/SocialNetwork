@@ -1,0 +1,7 @@
+#!/bin/sh
+# Deletes the local repo.
+DIR="$HOME/SN"
+cd $DIR
+echo "Which one of the following:\n$(ls)"
+read tobedeleted
+rm -rf $tobedeleted

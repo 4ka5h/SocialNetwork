@@ -1,0 +1,5 @@
+cd $HOME/SN/
+echo "Username to unfollow ? "
+read USERNAME
+sed "/$USERNAME/d" followlist > tmpfile && mv tmpfile followlist
+echo "$USERNAME unfollowed." 

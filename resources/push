@@ -1,0 +1,7 @@
+#!/bin/sh
+# Lists the networks you are part of.
+cd $HOME/SN/
+echo "Log from which of following: \n$(ls -d */ | cut -f1 -d'/')"
+read NETWORK
+cd $HOME/SN/$NETWORK
+git push origin $NETWORK$(whoami)
