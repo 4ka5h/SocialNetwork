@@ -23,7 +23,9 @@ This tool has been developed using Lubuntu 18.04 (Desktop-AMD) and git version 2
 
 
 ### Tests 
-After running "install.sh", all the script executables will be placed in the '/home/$uname/bin' path. These files are give priviledge for being executable so now you can go to your terminal and type 'sn --help' and get all the possible options you can opt for.
+After running "install.sh", all the script executables will be placed in the 
+```/home/$uname/bin``` path. These files are give priviledge for being executable so now you can go to your terminal and type 
+```sn --help``` and get all the possible options you can opt for.
 
 #### Evaluation
 Configure the script on each machine in a LAN environment with atleast three computers. SCRIPT WILL MAKE A NEW USER ACCOUNT FOR GIT BASED OPERATIONS.  
