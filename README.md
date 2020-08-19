@@ -23,23 +23,15 @@ This tool has been developed using Lubuntu 18.04 (Desktop-AMD) and git version 2
 
 
 ### Tests 
-* Random                       -69590
-* Round Robin                  -69638
-* Round Robin IfTraffic        -3284
-* Proportional Fair            -9595
-
-details about this problem are provided in document *wireless/doc/TimeFreqResourceAllocation-v0.pdf*
+After running "install.sh", all the script executables will be placed in the '/home/$uname/bin' path. These files are give priviledge for being executable so now you can go to your terminal and type 'sn --help' and get all the possible options you can opt for.
 
 #### Evaluation
-The script runs 16 
+Configure the script on each machine in a LAN environment with atleast three computers. SCRIPT WILL MAKE A NEW USER ACCOUNT FOR GIT BASED OPERATIONS.  
 
 ## How to contribute
 There are two main ways of contributing to Wireless Suite:
 
-1. **Implementing new subcommands**: The first version of Wireless Suite contains only one problem implementation. New
-problems can be easily added as simple variations of the first one (e.g. by changing its parameters), or by introducing
-fully new problem implementations (e.g. Adaptive Modulation and Coding, Open Loop Power Control, Handover optimization,
-etc).
+1. **Implementing new subcommands**: 
 
 2. **Implementing new methods**: Ideally, new agent contributions shall perform better than the default ones.
 
