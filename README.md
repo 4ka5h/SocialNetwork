@@ -31,7 +31,7 @@ After running "install.sh", all the script executables will be placed in the
 Configure the script on each machine in a LAN environment with atleast three computers. SCRIPT WILL MAKE A NEW USER ACCOUNT FOR GIT BASED OPERATIONS.  
 
 ## How to contribute
-There are two main ways of contributing to Wireless Suite:
+There are two main ways of contributing to this Suite:
 
 1. **Implementing new subcommands**: 
 
