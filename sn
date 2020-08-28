@@ -1,0 +1,32 @@
+#!/bin/sh
+SN_PATH="$HOME/bin/resources"
+SnName=$2
+while [ "$1" != "" ]; do
+    PARAM=`echo $1 | awk -F= '{print $1}'`
+    case $PARAM in
+        #Subcommands as required.
+        create)     $SN_PATH/create;;  
+        join)       $SN_PATH/join;;
+        pull)       $SN_PATH/pull;;
+        log)        $SN_PATH/log;;
+        show)       $SN_PATH/show;;    
+        push)       $SN_PATH/push;;
+        follow)     $SN_PATH/follow;;
+        members)    $SN_PATH/members;;
+        unfollow)   $SN_PATH/unfollow;;
+        list)		$SN_PATH/list;;
+        #Other optional subcommands.
+        --help)     $SN_PATH/help;;
+        --sn-path)  echo $SN_PATH;;
+        clone)      $SN_PATH/clone;;
+        leave)      $SN_PATH/leave;;
+        copy-post)  $SN_PATH/copy;;
+        archive)   $SN_PATH/archive;;
+        delete)     $SN_PATH/deletesn;;
+        *)
+            echo "ERROR: unknown parameter \"$PARAM\""
+            exit 1
+            ;;
+    esac
+    shift
+done
