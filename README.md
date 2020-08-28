@@ -21,6 +21,14 @@ Following are the dependencies required for setting up "sn"
 ## Provided problems 
 This tool has been developed using Lubuntu 18.04 (Desktop-AMD) and git version 2.17.1. The tool requires data exchanfe over network and hence requires permissions for the same.
 
+### Development
+The theme to solve the problem is to create a user named "git" in every terminal and assign this user all the permissions required for the networked communication so that push, pull, log and show etc can work smoothly. 
+``` 
+	sudo adduser --disabled-password git
+    	sudo su git
+```
+Above two commands from SN create do this task. 
+The "sn" file is the primary pivot in handling and redirecting all the subcommands. This takes and arguement, as one of the listed options, and executes corresponding script to perform command specific operations.
 
 ### Tests 
 After running "install.sh", all the script executables will be placed in the 
