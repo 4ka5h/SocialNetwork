@@ -40,6 +40,7 @@ Clone this repo to your local terminal, extract the zip file and execute ```inst
 **Code split into functions, most of which are smaller than 25 lines**
 
 *Most functions of important code blocks start with a comment explaining their functionality.*
+
 *Unit tests for individual functions.*
 
 Integration tests that verify the functionality of most subcommands.
