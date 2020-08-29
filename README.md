@@ -43,13 +43,17 @@ Clone this repo to your local terminal, extract the zip file and execute ```inst
 
 *Unit tests for individual functions.*
 
-Integration tests that verify the functionality of most subcommands.
+*Integration tests that verify the functionality of most subcommands.*
 
-Tests and/or shellcheck run in a continuous integration environment.
+*Tests and/or shellcheck run in a continuous integration environment.*
 
-Documentation provided in a README or similar file.
+*Documentation provided in a README or similar file.*
 
-Unix manual page
+*Unix manual page*
+
+### Approach
+As directed in the problem statement, I have implemented a master command ```sn``` which accpets options and calls subprograms for those tasks. Complete implementation is done using Bash. Git is used to perform the operation like creating a social network (by creating a new repository), push and pull updates from a network (by push and pull to specific repos) and all. 
+
 
 ### My Implementation
 In order to meet the above requirements, this tool has been developed using Lubuntu 18.04 (Desktop-AMD) and git version 2.17.1. The tool requires data exchange over network and hence requires permissions for the same. I have achieved this by creating a new user accout named 'git' in every terminal. This new user account holds all the information about the 'Social Networks' and handles file sharing.
