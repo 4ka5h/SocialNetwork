@@ -9,8 +9,7 @@ Bash and git based social network tool "sn" for LAN/Intranet environments
 ## Getting started
 Clone this repo to your local terminal, extract the zip file and execute ```installsn```. Following are the dependencies required for setting up "sn"
 1. Install git and execute the ```installsn``` from zip file at each terminal:
-    ```
-    	sudo apt-get update	
+    ```sudo apt-get update	
 	sudo apt install git -y
 	sudo apt install tar -y
 	```
