@@ -1,25 +1,51 @@
-# SocialNetwork
-Bash and git based social network tool "sn" for LAN environments
+# Social Network
+Bash and git based social network tool "sn" for LAN/Intranet environments
 
 # Social Network based on git commands
 
 ## Overview
-This is a bash script based Social network using git under the hood. This script enables you to share updates, posts and messages in a Local Area Network scenario among other developers. Once installed, you can use "sn --help" for help regarding available options.
+"sn" is a bash script based social network tool using git under the hood. This script enables you to share progress on file, updates, posts and messages in a Local Area Network scenario among other developers. Once installed, you can use "sn --help" for help regarding available options, which is also described later in this page. 
 
 ## Getting started
-Following are the dependencies required for setting up "sn"
-1. Install git and tar at each terminal:
+Clone this repo to your local terminal, extract the zip file and execute ```installsn```. Following are the dependencies required for setting up "sn"
+1. Install git and execute the ```installsn``` from zip file at each terminal:
     ```
-    sudo apt-get update
+    	sudo apt-get update	
 	sudo apt install git -y
 	sudo apt install tar -y
 	```
 
-2. 
+2. Configure IP address of the rest of the terminals from your networks who can have repos at their end.
 
 
 ## Provided problems 
-This tool has been developed using Lubuntu 18.04 (Desktop-AMD) and git version 2.17.1. The tool requires data exchanfe over network and hence requires permissions for the same.
+
+**The question refer to the following subcommands and characteristics in the order they appear.
+	1. Working subcommand: create
+	2. Working subcommand: join
+	3. Working subcommand: pull
+	4. Working subcommand: log
+ 	5. Working subcommand: show
+	6. Working subcommand: post
+	7. Working subcommand: like
+	8. Working subcommand: push
+	9. Working subcommand: members
+	10.Working subcommand: follow
+	11.Working subcommand: unfollow
+	12.Optional subcommand #1**
+	
+**Based on Git**
+**Code split into functions, most of which are smaller than 25 lines**
+Most functions of important code blocks start with a comment explaining their functionality.
+Unit tests for individual functions
+Integration tests that verify the functionality of most subcommands
+Tests and/or shellcheck run in a continuous integration environment.
+Documentation provided in a README or similar file
+
+Unix manual page
+
+### My Implementation
+In order to meet the above requirements, this tool has been developed using Lubuntu 18.04 (Desktop-AMD) and git version 2.17.1. The tool requires data exchange over network and hence requires permissions for the same. I have achieved this by creating a new user accout named 'git' in every terminal. This new user account holds all the information about the 'Social Networks' and handles file sharing.
 
 ### Development
 The theme to solve the problem is to create a user named "git" in every terminal and assign this user all the permissions required for the networked communication so that push, pull, log and show etc can work smoothly. 
