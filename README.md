@@ -20,7 +20,8 @@ Clone this repo to your local terminal, extract the zip file and execute ```inst
 
 ## Provided problems 
 
-**The question refer to the following subcommands and characteristics in the order they appear.
+**The question refer to the following subcommands and characteristics in the order they appear.**
+
 	1. Working subcommand: create
 	2. Working subcommand: join
 	3. Working subcommand: pull
