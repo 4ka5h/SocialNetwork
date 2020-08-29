@@ -1,5 +1,6 @@
 #!/bin/sh
-cp sn.gz $HOME/bin/ 
+sudo su
+cp SocialNetwork-master.zip $HOME/bin/ 
 tar -xvf ./sn.tar.gz -C $HOME/bin	 
 rm sn.gz
 cd $HOME/bin 
