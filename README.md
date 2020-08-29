@@ -36,12 +36,18 @@ Clone this repo to your local terminal, extract the zip file and execute ```inst
 	12.Optional subcommand #1
 	
 **Based on Git**
+
 **Code split into functions, most of which are smaller than 25 lines**
+
 Most functions of important code blocks start with a comment explaining their functionality.
-Unit tests for individual functions
-Integration tests that verify the functionality of most subcommands
+
+Unit tests for individual functions.
+
+Integration tests that verify the functionality of most subcommands.
+
 Tests and/or shellcheck run in a continuous integration environment.
-Documentation provided in a README or similar file
+
+Documentation provided in a README or similar file.
 
 Unix manual page
 
