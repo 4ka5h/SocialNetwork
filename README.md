@@ -33,7 +33,7 @@ Clone this repo to your local terminal, extract the zip file and execute ```inst
 	9. Working subcommand: members
 	10.Working subcommand: follow
 	11.Working subcommand: unfollow
-	12.Optional subcommand #1**
+	12.Optional subcommand #1
 	
 **Based on Git**
 **Code split into functions, most of which are smaller than 25 lines**
