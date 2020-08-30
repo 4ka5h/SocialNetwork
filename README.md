@@ -8,7 +8,6 @@ Bash and git based social network tool "sn" for LAN/Intranet environments
 
 
 ![Help Page](/1.png)
-Format: ![Alt Text](url)
 
 ## Getting started
 Clone this repo to your local terminal, extract the zip file and execute ```installsn```. Following are the dependencies required for setting up "sn"
@@ -21,7 +20,6 @@ Clone this repo to your local terminal, extract the zip file and execute ```inst
 
 2. Configure IP address of the rest of the terminals from your networks who can have repos at their end. Generate ssh public keys on each of the terminals and share among the terminals you want to be in the networks. Each public key should be shared with all other users.
 ![SSH Key Copied](/3.png)
-Format: ![Alt Text](url)
 
 ## Provided problems 
 
@@ -64,7 +62,6 @@ As directed in the problem statement, I have implemented a master command ```sn`
 In order to meet the above requirements, this tool has been developed using Lubuntu 18.04 (Desktop-AMD) and git version 2.17.1. The tool requires data exchange over network and hence requires permissions for the same. I have achieved this by creating a new user accout named 'git' in every terminal. This new user account holds all the information about the 'Social Networks' and handles file sharing.
 
 ![Working Subcommand LOG](/2.png)
-Format: ![Alt Text](url)
 
 ### Development
 The theme to solve the problem is to create a user named "git" in every terminal and assign this user all the permissions required for the networked communication so that push, pull, log and show etc can work smoothly. 
