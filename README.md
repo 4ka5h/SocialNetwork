@@ -6,6 +6,10 @@ Bash and git based social network tool "sn" for LAN/Intranet environments
 ## Overview
 "sn" is a bash script based social network tool using git under the hood. This script enables you to share progress on file, updates, posts and messages in a Local Area Network scenario among other developers. Once installed, you can use "sn --help" for help regarding available options, which is also described later in this page. 
 
+
+![Help Page](/1.png)
+Format: ![Alt Text](url)
+
 ## Getting started
 Clone this repo to your local terminal, extract the zip file and execute ```installsn```. Following are the dependencies required for setting up "sn"
 1. Install git and execute the ```installsn``` from zip file at each terminal:
